@@ -164,16 +164,10 @@ var utag_data = {
         <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
         <p>Published with <a href="https://pages.github.com">GitHub Pages.</a></p>
-        <p> PRIVACY STATEMENT TEST: 
-        <div class="BoschPrivacySettingsV2__buttonContainer">
-      
-
-      <div class="BoschPrivacySettingsV2__smallprint">
-        <div class="BoschPrivacySettingsV2__smallprint__title">Widerruf</div>
-        <div>Sie können Ihre hier erteilte Einwilligung jederzeit mit Wirkung für die Zukunft unter <a class="BoschPrivacySettingsV2__link" href="#" data-switch-to-settings="">Privatsphäreeinstellungen</a> widerrufen. Nähere Information entnehmen Sie bitte unseren <a class="BoschPrivacySettingsV2__link" href="target.html?prevent-auto-open-privacy-settings=1">Datenschutzhinweisen</a>.</div>
-      </div>
-    </div>
-        </p>
+        <script> 
+        document.querySelector("#footer > div.container-fluid > div > div.O-PTHG-MicrositeFooter__copyright > ul > li:nth-child(3) > div").innerHTML = "<a class=\"A-Link__link A-Link__link--primary\" >Privatsphäre-Einstellungen</a>"
+document.querySelector("#footer > div.container-fluid > div > div.O-PTHG-MicrositeFooter__copyright > ul > li:nth-child(3) > div > a").addEventListener("click",function(){window.BoschPrivacy.show()})
+</script>
       </footer>
     </div>
 
